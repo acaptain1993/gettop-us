@@ -1,6 +1,6 @@
-# Created by aaron at 7/17/2022
+# Created by aaron at 7/15/2022
 Feature: Test Involving with Gettop.us Home Page
-  # Enter feature description here
+  All test involve Gettop Website Starting with Home Page
 
   Scenario: Verify Home Button Works Correctly
     Given Gettop Home Page

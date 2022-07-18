@@ -44,4 +44,3 @@ def home_page_verified(context):
     assert correct_number_of_elements == home_page_elements, f"{home_page_elements} should be {correct_number_of_elements}"
     sleep(2)
     context.driver.close()
-

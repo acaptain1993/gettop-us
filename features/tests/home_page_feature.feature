@@ -8,3 +8,9 @@ Feature: Test Involving with Gettop.us Home Page
     And Mac Page is Verify
     Then Home Button is Clicked
     And Home Page is Verified
+
+  Scenario: Browse Our Categories Verify Functionality
+    Given Gettop Home Page
+    When Browse Our Categories Text is Verified
+    And Verify 4 Correct Categories are Shown
+    Then Click Each Category and Verify the Correct Page Opened

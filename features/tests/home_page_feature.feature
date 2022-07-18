@@ -14,3 +14,11 @@ Feature: Test Involving with Gettop.us Home Page
     When Browse Our Categories Text is Verified
     And Verify 4 Correct Categories are Shown
     Then Click Each Category and Verify the Correct Page Opened
+
+    Scenario: Verify the GetTop Logo takes you to home page.
+      Given Gettop Home Page
+      When Browse Our Categories Text is Verified
+      And Mac Link is Clicked
+      And Mac Page is Verify
+      Then Click GetTop Logo
+      And Verify Browse Our Categories Text

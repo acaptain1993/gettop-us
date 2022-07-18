@@ -52,20 +52,20 @@ def click_and_verify_category(context):
     clickable_ipad.click()
     sleep(2)
     current_location = context.driver.find_element(By.CSS_SELECTOR, CURRENT_LOCATION).text
-    assert current_location == expected_current_location_accessories, f"Location is {current_location}, should be {expected_current_location_accessories}"
+    assert current_location == expected_current_location_ipad, f"Location is {current_location}, should be {expected_current_location_accessories}"
     click_home = context.driver.find_element(By.XPATH, HOME_LINK)
     click_home.click()
 
     clickable_iphone.click()
     sleep(2)
     current_location = context.driver.find_element(By.CSS_SELECTOR, CURRENT_LOCATION).text
-    assert current_location == expected_current_location_accessories, f"Location is {current_location}, should be {expected_current_location_accessories}"
+    assert current_location == expected_current_location_iphone, f"Location is {current_location}, should be {expected_current_location_accessories}"
     click_home = context.driver.find_element(By.XPATH, HOME_LINK)
     click_home.click()
 
     clickable_macbook.click()
     sleep(2)
     current_location = context.driver.find_element(By.CSS_SELECTOR, CURRENT_LOCATION).text
-    assert current_location == expected_current_location_accessories, f"Location is {current_location}, should be {expected_current_location_accessories}"
+    assert current_location == expected_current_location_macbook, f"Location is {current_location}, should be {expected_current_location_accessories}"
     click_home = context.driver.find_element(By.XPATH, HOME_LINK)
     click_home.click()
